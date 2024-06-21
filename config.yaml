@@ -17,12 +17,11 @@ settings:
 monitors:
   - id: macin-org # unique identifier
     name: macin.org
-    description: 'You write code. They handle the rest.' # default=empty
     url: 'https://macin.org/' # URL to fetch
     method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: true # allows the title to be a link, default=true
+    expectStatus: 200
+    followRedirect: false  # should fetch follow redirects, default=false
+    linkable: true
 
   - id: nas-macin-org
     name: nas.macin.org
@@ -30,10 +29,32 @@ monitors:
     url: 'https://nas.macin.org:5001'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+    linkable: true
 
   - id: docker-macin-org
     name: docker.macin.org
     url: 'https://docker.macin.org'
     method: GET
     expectStatus: 200
+    linkable: true
+
+  - id: talk-macin-org
+    name: talk.macin.org
+    url: 'https://talk.macin.org/ui#'
+    method: GET
+    expectStatus: 200
+    linkable: true
+
+  - id: gcp-macin-org
+    name: gcp.macin.org
+    url: 'https://gcp.macin.org:2014'
+    method: GET
+    expectStatus: 200
+    linkable: true
+
+  - id: gpt-macin-org
+    name: gpt.macin.org
+    url: 'https://gpt.macin.org'
+    method: GET
+    expectStatus: 200
+    linkable: true
