@@ -19,7 +19,7 @@ monitors:
     name: macin.org
     description: 'Read my Blog.'
     url: 'https://macin.org/' # URL to fetch
-    method: GET # default=GET
+    method: POST
     expectStatus: 200
     followRedirect: false  # should fetch follow redirects, default=false
     linkable: true
