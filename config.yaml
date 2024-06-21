@@ -52,7 +52,7 @@ monitors:
     name: gcp.macin.org
     description: 'Cloud in the west US'
     url: 'https://gcp.macin.org:2014/slagor/'
-    method: GET
+    method: HEAD
     expectStatus: 200
     linkable: true
 
