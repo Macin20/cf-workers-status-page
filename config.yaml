@@ -1,6 +1,6 @@
 settings:
   title: 'Macin Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  url: 'https://macin.org' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -17,6 +17,7 @@ settings:
 monitors:
   - id: macin-org # unique identifier
     name: macin.org
+    description: 'Read my Blog.'
     url: 'https://macin.org/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200
@@ -33,6 +34,7 @@ monitors:
 
   - id: docker-macin-org
     name: docker.macin.org
+    description: 'A free node for Docker'
     url: 'https://docker.macin.org'
     method: GET
     expectStatus: 200
@@ -40,6 +42,7 @@ monitors:
 
   - id: talk-macin-org
     name: talk.macin.org
+    description: 'Read my Blog comments.'
     url: 'https://talk.macin.org/ui#'
     method: GET
     expectStatus: 200
@@ -47,13 +50,15 @@ monitors:
 
   - id: gcp-macin-org
     name: gcp.macin.org
-    url: 'https://gcp.macin.org:2014'
+    description: 'Cloud in the west US'
+    url: 'https://gcp.macin.org:2014/slagor/'
     method: GET
     expectStatus: 200
     linkable: true
 
   - id: gpt-macin-org
     name: gpt.macin.org
+    description: 'Use ChatGPT for free.'
     url: 'https://gpt.macin.org'
     method: GET
     expectStatus: 200
