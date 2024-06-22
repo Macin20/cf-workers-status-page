@@ -18,8 +18,8 @@ monitors:
   - id: macin-org # unique identifier
     name: macin.org
     description: 'Read my Blog.'
-    url: 'https://macin.org/' # URL to fetch
-    method: POST
+    url: 'https://www.macin.org/' # URL to fetch
+    method: GET
     expectStatus: 200
     followRedirect: false  # should fetch follow redirects, default=false
     linkable: true
