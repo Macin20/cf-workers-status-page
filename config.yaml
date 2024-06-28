@@ -24,14 +24,6 @@ monitors:
     followRedirect: false  # should fetch follow redirects, default=false
     linkable: true
 
-  - id: nas-macin-org
-    name: nas.macin.org
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://nas.macin.org:5001'
-    method: GET
-    expectStatus: 200
-    linkable: true
-
   - id: docker-macin-org
     name: docker.macin.org
     description: 'A free node for Docker'
@@ -45,14 +37,6 @@ monitors:
     description: 'Read my Blog comments.'
     url: 'https://talk.macin.org/ui#'
     method: GET
-    expectStatus: 200
-    linkable: true
-
-  - id: gcp-macin-org
-    name: gcp.macin.org
-    description: 'Cloud in the west US'
-    url: 'https://gcp.macin.org:2014/slagor/'
-    method: HEAD
     expectStatus: 200
     linkable: true
 
