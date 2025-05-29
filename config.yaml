@@ -1,5 +1,5 @@
 settings:
-  title: 'Macin Status Page'
+  title: 'Macin Status'
   url: 'https://macin.org' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
